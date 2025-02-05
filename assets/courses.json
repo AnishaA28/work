@@ -1,0 +1,43 @@
+{
+    "courses": [
+      {
+        "name": "Python 101",
+        "instructor": "John Doe",
+        "duration": "3 months"
+      },
+      {
+        "name": "Web Development", 
+        "instructor": "Jane Smith",
+        "duration": "4 months"
+      },
+      {
+        "name": "Computer Network",
+        "instructor": "Dr. Smith", 
+        "duration": "3 months"
+     },
+     {
+        "name": "Software Engineering",
+         "instructor": "Prof. Johnson", 
+         "duration": "4 months"
+        },
+
+     {
+        "name": "Data Structures", 
+        "instructor": "Dr. Williams",
+         "duration": "2 months"
+        },
+      {
+        "name":"Web Design",
+        "instructor":"Dr. Williams",
+        "duration":"3 months"
+
+
+      },
+      {
+        "name":"Artificial Intelligence",
+        "instructor":"Dr. Williams",
+        "duration":"3 months"
+      }  
+        
+     ]
+}  
