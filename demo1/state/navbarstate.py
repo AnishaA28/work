@@ -14,4 +14,4 @@ class NavbarState(rx.State):
 
     def login(self):
         self.is_logged_in = True
-        return rx.redirect("/home")
+        return rx.redirect("/home") 

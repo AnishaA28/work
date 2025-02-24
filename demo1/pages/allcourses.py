@@ -6,11 +6,14 @@ from demo1.state.coursestate import CourseState
 
 @rx.page(route="/courses")
 def all_course():
-    return rx.vstack(navbar_buttons(),rx.container(
-        rx.heading("Welcome to the Course Page!", size="9"),
-        rx.text("This is where you can learn more course"),
-        rx.box(rx.center(course_table(), height="50vh", on_mount=CourseState.load_data) ,),
-    ),
-     spacing="1",  # spacing value set here
+    return rx.box(rx.box(rx.vstack(navbar_buttons(),),),rx.box(rx.container(
+        rx.heading("Welcome to the Course Page!", size="9",align="center"),
+        rx.text("This is where you can learn more course",align="center"),),
+        background_color="var(--gray-3)",
+        width="100%",),
+        rx.box(rx.vstack(rx.container(rx.center(course_table(), height="130vh",width="90vw", on_mount=CourseState.fetch_courses()) ,),
+    ),),
+     spacing="4",  # spacing value set here
     padding="10px",
-    )  
+    
+    ), 

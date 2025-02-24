@@ -6,7 +6,7 @@ def drawer_content():
         rx.flex(
             rx.drawer.close(
                 rx.button(
-                    "Close",
+                    "CLOSE",
                     on_click=DrawerState.toggle_drawer,
                 )
             ),
@@ -16,7 +16,7 @@ def drawer_content():
                 on_click=DrawerState.toggle_drawer,
             ),
             rx.link(
-                "Detail",
+                "Placement&Pricing",
                 href="#section2",
                 on_click=DrawerState.toggle_drawer,
             ),

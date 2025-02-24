@@ -35,7 +35,7 @@ def course_page() -> rx.Component:
                         rx.center(
                             course_table(), 
                             height="auto", 
-                            on_mount=CourseState.load_data
+                            on_mount=CourseState.fetch_courses
                         ),
                         padding="2em",
                         shadow="lg",

@@ -4,7 +4,8 @@ from ..state.auth_state import AuthState
 
 
 
-        
+
+       
 
 @rx.page(route="/home", on_load=AuthState.require_auth)
 def home_page():

@@ -16,6 +16,7 @@ from .pages.course import course_page
 
 from .pages.contact import contact_page
 from .pages.allcourses import all_course
+from .models.coursemodel import Data
 
 
 
@@ -28,11 +29,16 @@ from .components.coursetable import course_table
 
 
 
+
 #urls
-
-
+async def api_test(item_id: int):
+    return {"my_result": item_id}
 
 app = rx.App()
+app.api.add_api_route("/items/{item_id}", api_test)
+
+
+
 
 
 

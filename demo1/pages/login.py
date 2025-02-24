@@ -3,6 +3,7 @@ from ..state.auth_state import AuthState
 
 
 
+
 def login() -> rx.Component:
     return rx.center(rx.card(
         
@@ -52,6 +53,7 @@ def login() -> rx.Component:
                     size="3",
                     width="100%",
                     name="email_address",
+                    on_change=AuthState.set_email_address
                 ),
                 spacing="2",
                 justify="start",
@@ -78,9 +80,10 @@ def login() -> rx.Component:
                     type="password",
                     size="3",
                     width="100%",
+                    on_change=AuthState.set_password
                 ),
             
-                rx.button("Sign in",on_click=lambda: rx.redirect("/home"),type="submit", size="3", width="100%"),
+                rx.button("Sign in",on_click=AuthState.login,type="submit", size="3", width="100%"),
                     spacing="6",
                     width="100%"
                 ),

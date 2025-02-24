@@ -1,5 +1,5 @@
 import reflex as rx
-from demo1.components.navbar import NavbarState, navbar_buttons 
+from demo1.components.navbar import navbar_buttons 
 
 
 class CondState(rx.State):
